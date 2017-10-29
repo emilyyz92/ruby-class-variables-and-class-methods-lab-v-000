@@ -23,6 +23,7 @@ class Song
       #if genre_name == @@genre[index+1]
         #@@genre.delete(genre_name)
       #end
+    @@genre
     end
   end
 
