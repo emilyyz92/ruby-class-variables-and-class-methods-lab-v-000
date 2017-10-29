@@ -31,5 +31,7 @@ class Song
     gcount_h = {}
     @@genres.each do |genre|
       if gcount_h.keys.include?(genre)
-
+        gcount_h[genre]+=1
+      else
+        gcount_h[genre] = 1
 end
