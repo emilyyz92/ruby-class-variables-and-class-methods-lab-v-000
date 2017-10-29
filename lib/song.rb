@@ -2,6 +2,7 @@ class Song
   attr_reader :name, :artist, :genre
 
   @@count = 0
+  @@genre = []
 
   def initialize=(name,artist,genre)
     @name = name
@@ -15,7 +16,7 @@ class Song
     @@count
   end
 
-  @@genre = []
+  
 
   def self.genres
     @@genre.each_with_index do |genre_name,index|
