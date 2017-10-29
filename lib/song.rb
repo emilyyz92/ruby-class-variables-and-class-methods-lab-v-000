@@ -38,4 +38,15 @@ class Song
     end
     gcount_h
   end
+
+  def self.artist_count
+    acount_h = {}
+    @@artists.each do |artist|
+      if acount_h.keys.include?(artist)
+        acount_h[artist]+=1
+      else
+        acount_h[artist] = 1
+      end
+    end
+  end
 end
