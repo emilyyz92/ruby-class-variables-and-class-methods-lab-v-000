@@ -24,7 +24,7 @@ class Song
         #@@genre.delete(genre_name)
       #end
     #end
-    @@genre
+    @@genres
   end
 
 end
