@@ -20,12 +20,7 @@ class Song
   end
 
   def self.genres
-    @@genres.each_with_index do |genre_name,index|
-      if genre_name == @@genres[index+1]
-        @@genres.delete(@@genres[index])
-      end
-    end
-    @@genres
+    @@genres.uniq
   end
 
   def self.artists
