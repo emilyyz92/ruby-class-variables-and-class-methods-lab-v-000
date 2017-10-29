@@ -48,6 +48,6 @@ class Song
         acount_h[artist] = 1
       end
     end
-    acount_j
+    acount_h
   end
 end
