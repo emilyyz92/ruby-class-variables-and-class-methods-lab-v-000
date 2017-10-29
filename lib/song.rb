@@ -20,9 +20,9 @@ class Song
   end
 
   def self.genres
-    @@genre.each_with_index do |genre_name,index|
-      if genre_name == @@genre[index+1]
-        @@genre.delete(@@genre[index])
+    @@genres.each_with_index do |genre_name,index|
+      if genre_name == @@genres[index+1]
+        @@genres.delete(@@genres[index])
       end
     end
     @@genres
