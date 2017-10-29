@@ -16,8 +16,6 @@ class Song
     @@count
   end
 
-
-
   def self.genres
     @@genre.each_with_index do |genre_name,index|
       if genre_name == @@genre[index+1]
